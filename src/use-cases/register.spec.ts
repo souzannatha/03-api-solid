@@ -15,7 +15,6 @@ describe('Register Use Case', () => {
 
   it('should to be able to register', async () => {
 
-
     const { user } = await sut.execute({
       name: 'John Doe',
       email: 'johndoe@example.com',
@@ -26,7 +25,6 @@ describe('Register Use Case', () => {
   })
 
   it('should hash user password upon registration', async () => {
-
 
     const { user } = await sut.execute({
       name: 'John Doe',
