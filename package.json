@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "start": "node build/server.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "build": "tsup src --out-dir build"
   },
   "keywords": [],
@@ -20,7 +22,9 @@
     "prisma": "4.10.1",
     "tsup": "8.5.1",
     "tsx": "4.21.0",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "vite-tsconfig-paths": "6.1.1",
+    "vitest": "4.0.18"
   },
   "dependencies": {
     "@prisma/client": "4.10.1",
