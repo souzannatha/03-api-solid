@@ -5,7 +5,7 @@ import { CheckInUseCase } from './check-in'
 let checkInsRepository: InMemoryCheckInsRepository
 let sut: CheckInUseCase
 
-describe('Register Use Case', () => {
+describe('CheckIn Use Case', () => {
   beforeEach(() => {
     checkInsRepository = new InMemoryCheckInsRepository
     sut = new CheckInUseCase(checkInsRepository)
