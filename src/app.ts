@@ -13,6 +13,7 @@ app.setErrorHandler((error, _, reply) => {
       message: 'Validation error.', issues: treeifyError(error)
     })
   }
+
   if (env.NODE_ENV !== 'production') {
     console.error(error)
   } else {
