@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "start": "node build/server.js",
-    "test": "vitest run",
-    "test:watch": "vitest",
+    "test": "vitest run --project unit",
+    "test:e2e": "vitest run --project e2e",
+    "test:watch": "vitest --project unit",
+    "test:e2e:watch": "vitest --project e2e",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage",
     "build": "tsup src --out-dir build"
@@ -17,7 +19,7 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "@rocketseat/eslint-config": "2.2.2",
+    "@rocketseat/eslint-config": "3.0.12",
     "@types/bcryptjs": "2.4.6",
     "@types/node": "25.4.0",
     "@vitest/coverage-v8": "4.0.18",
@@ -27,6 +29,7 @@
     "tsup": "8.5.1",
     "tsx": "4.21.0",
     "typescript": "5.9.3",
+    "vite": "7.3.1",
     "vite-tsconfig-paths": "6.1.1",
     "vitest": "4.0.18"
   },

@@ -21,7 +21,7 @@ app.setErrorHandler((error, _, reply) => {
   if (env.NODE_ENV !== 'production') {
     console.error(error)
   } else {
-    //TODO: Here i should log to an external tool like DotaDog
+    //TODO: Here i should log to an external tool like DataDog
   }
 
   return reply.status(500).send({
