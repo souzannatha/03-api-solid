@@ -6,7 +6,6 @@ import { history } from "./history";
 import { metrics } from "./metrics";
 
 export async function checkInsRoutes() {
-  app.addHook('onRequest', verifyJWT)
 
   app.get('/check-ins/hisotry', history)
   app.get('/check-ins/metrics', metrics)
