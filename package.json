@@ -36,12 +36,13 @@
     "vitest": "4.0.18"
   },
   "dependencies": {
+    "@fastify/cookie": "11.0.2",
     "@fastify/jwt": "10.0.0",
     "@prisma/client": "4.10.1",
     "bcryptjs": "3.0.3",
     "dayjs": "1.11.20",
     "dotenv": "17.3.1",
-    "fastify": "5.8.2",
+    "fastify": "5.8.4",
     "zod": "4.3.6"
   }
 }
