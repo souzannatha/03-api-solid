@@ -4,6 +4,7 @@ import { validate } from "./validate";
 import { history } from "./history";
 import { metrics } from "./metrics";
 import { verifyJWT } from '@/http/middlewares/verify-jwt';
+import { verifyUserRole } from "@/http/middlewares/verify-user-role";
 
 export async function checkInsRoutes() {
 
@@ -17,5 +18,5 @@ export async function checkInsRoutes() {
     create,
   )
 
-  app.patch('/check-ins/:checkInId/validate', validate)
+  app.patch('/check-ins/:checkInId/validate', { onRequest: [verifyJWT, verifyUserRole('ADMIN')] }, validate)
 }
